@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Moedas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Conversor de Moedas</h1>
+
+        <div class="input-section">
+            <label for="currency">Escolha a moeda:</label>
+            <select id="currency" name="currency">
+                <option id="option"  value="dolar">Dólar</option>
+                <option id="option" value="euro">Euro</option>
+            </select>
+            <input type="number" id="amount" placeholder="Digite o valor em Reais">
+            <button onclick="convertCurrency()">Converter</button>
+        </div>
+
+        <div >
+            <h1 class="resposta">
+
+            </h1>
+        </div>
+
+        <div class="cards-container">
+            <div class="card">
+                <h2><i class="fa-solid fa-dollar-sign"></i> DÓLAR</h2>
+                <h1 id="dollar-value"></h1>
+            </div>
+            <div class="card">
+                <h2><i class="fa-solid fa-euro-sign"></i> EURO</h2>
+                <h1 id="euro-value">-</h1>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
